@@ -1,7 +1,12 @@
-//: [Previous](@previous)
+
 
 import Foundation
 
-var greeting = "Hello, playground"
+let mybool: Bool? = nil
+var myInt: Int? = nil
+var myString: String? = nil
 
-//: [Next](@next)
+
+let myNewBool: Bool = mybool ?? false
+let myNewInt: Int = myInt ?? 0
+let myNewString: String = myString ?? ""
