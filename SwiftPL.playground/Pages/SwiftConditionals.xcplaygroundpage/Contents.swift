@@ -15,15 +15,19 @@ if age >= 18 && hasDriversLicense{
 
 
 print("enter math grade")
-var Math = Int(readLine()!)!
+let Math = Int(readLine() ?? "") ?? 0
 
 print("enter science grade")
-var Science = Int(readLine()!)!
+let Science = Int(readLine() ?? "") ?? 0
 
 print("enter ICT grade")
-var ICT = Int(readLine()!)!
+let ICT = Int(readLine() ?? "") ?? 0
 
-let average = (Math + Science + ICT) / 3
+
+
+
+
+let average = Double(Math + Science + ICT) / 3.0
 
 if (average >= 90 && average <= 100){
     print("points: " ,average, "GPA: A")
@@ -36,6 +40,8 @@ if (average >= 90 && average <= 100){
 }else{
     print("points: " ,average, "GPA: F")
 }
+
+
 
 
 
