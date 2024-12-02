@@ -1,4 +1,3 @@
-
 import Foundation
 
 let celcius = 30
